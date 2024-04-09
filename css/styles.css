@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Utility Classes */
+
+#model-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.relative {
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-md {
+    font-size: 24px;
+}
+
+.text-xl {
+    font-size: 32px;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.line-height-2 {
+    line-height: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.semibold {
+    font-weight: semibold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+/* Utility Classes */
+.navigation {
+    position: absolute;
+    width: 100%;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    padding: 15px 0;
+}
+
+.nav-div-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-div-1 h1:nth-child(2) {
+    font-size: 16px;
+    font-weight: semi-bold;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: semi-bold;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #ff0000;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    height: 62.5px;
+    width: 252.5px;
+    margin-top: -15px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-text {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+/* 3JS Code */
+body {
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+    color: white;
+}
+
+canvas {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    height: 2000vh;
+    position: relative;
+    z-index: 1;
+}
+
+.text {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition:
+        opacity 0.5s,
+        transform 0.5s;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.text.left {
+    left: -320px;
+}
+
+.text.right {
+    right: -320px;
+}
+
+.text.visible {
+    opacity: 1;
+}
+
+.text.visible.left {
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.text.visible.right {
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.text:not(.visible) {
+    transition-delay: 0.25s;
+}
+
+/* Section Code */
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 60px 0;
+    background-color: #000;
+    color: #fff;
+    z-index: 2;
+}
+
+.section h1 {
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about-section p {
+    font-size: 20px;
+    width: 100%;
+    text-align: left !important;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Market Section */
+#market-section {
+    min-height:100vh;
+    background-color: #2d2d2d;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.relative {
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+
+#market-section img {
+    width: 100%;
+    transition: all ease 0.5s;
+    height: 100%;
+
+}
+
+.market-show-div{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: relative !important;
+    height: 16em;
+    width: 24em;
+}
+
+.grid-image h1{
+    position: absolute;
+    top: 45%;
+}
+.box1{
+    height: 100%;
+    width: 100%;
+}
+.grid{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 1em;
+  gap: 1rem;
+}
+.market-show-div h1 {
+    width: 100%;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+.box1-heading{
+    text-align: center;
+}
+.market-show-div:hover h1 {
+    opacity: 1;
+}
+
+.market-show-div:hover img {
+    transform: scale(1.01);
+    opacity: 0.5;
+}
+
+/* Market Section */
+
+/* Form  */
+
+#form-section {
+    height: 110vh;
+    background-color: #000;
+    width: 100%;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 120px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #fafafa;
+}
+
+/* Form Code */
+
+/* Footer Code */
+footer {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Code */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .text {
+        width: 80%;
+    }
+
+    .text.visible.left,
+    .text.visible.right {
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+    }
+
+
+    
+    .section {
+        height: 200vh;
+        padding: 40px 0;
+        padding-top: 50vh;
+    }
+
+
+    #about-section p {
+        font-size: 20px;
+    }
+
+    .text-md {
+        font-size: 20px;
+    }
+
+    .text-xl {
+        font-size: 24px;
+    }
+
+    #about-section p {
+        font-size: 20px;
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        height: 3000vh !important;
+        position: relative;
+        z-index: 1;
+    }
+
+    .box {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #market-show-div {
+        position: relative;
+        min-height: 100vh !important;
+    }
+
+
+    .market-section{
+        min-height: 200vh;
+    }
+    .box1 {
+        padding-top: 10vh;
+        margin-top: 40vh;
+        min-height: 200vh;
+        width: 100%;
+        position: relative;
+        top: -35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    .form-sec{
+        margin-top: 17vh;
+        padding-top:0;
+        z-index: 1;
+    }
+    .market-show-div:hover img {
+        transform: scale(1.01);
+        opacity: 1;
+    }
+}
